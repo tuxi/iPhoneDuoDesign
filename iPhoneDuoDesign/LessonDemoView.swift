@@ -19,6 +19,10 @@ struct LessonDemoView: View {
             SafeAreaDemo()
         case "single-experience":
             SingleExperienceDemo()
+        case "vertical-controls":
+            VerticalControlsDemo()
+        case "inner-display":
+            InnerDisplayDemo()
         default:
             Text("这个案例的可运行实验还在准备中。")
                 .foregroundStyle(.secondary)

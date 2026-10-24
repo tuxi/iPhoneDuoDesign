@@ -22,7 +22,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("Duo Design Lab")
+            .navigationTitle("iPhone Duo Guide")
             .navigationDestination(for: Lesson.self) { lesson in
                 LessonDetailView(lesson: lesson)
             }
@@ -40,9 +40,9 @@ struct ContentView: View {
 private struct WelcomeView: View {
     var body: some View {
         ContentUnavailableView {
-            Label("Duo Design Lab", systemImage: "rectangle.2.swap")
+            Label("iPhone Duo Guide", systemImage: "book.pages")
         } description: {
-            Text("从左侧选择一个学习案例，边阅读边运行示例。")
+            Text("这份设计指南本身就是我们的示例 App，边阅读边观察它如何适配。")
         }
     }
 }

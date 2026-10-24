@@ -22,6 +22,7 @@ struct LessonDetailView: View {
                     .font(.title3)
                     .foregroundStyle(.secondary)
                 
+                GuideSectionView(entry: lesson.guideEntry)
                 DemoPlaceholder(title: "设计原则", text: lesson.principle)
                 DemoPlaceholder(title: "动手实验", text: lesson.experiment)
 

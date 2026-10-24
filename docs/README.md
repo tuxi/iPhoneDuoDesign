@@ -8,7 +8,9 @@
 2. [Resizability：让布局自由缩放](lessons/01-resizability.md)
 3. [Safe Area：让内容避开系统区域](lessons/02-safe-area.md)
 4. [Single Experience：保持状态连续](lessons/03-single-experience.md)
-5. 阅读根目录的[中文设计指南](../iPhone-Duo-设计指南.md)或[英文设计指南](../README.md)
+5. [Vertical Controls：让系统管理控件](lessons/04-vertical-controls.md)
+6. [Inner Display：使用双栏展示指南](lessons/05-inner-display.md)
+7. 阅读根目录的[中文设计指南](../iPhone-Duo-设计指南.md)或[英文设计指南](../README.md)
 
 后续案例会覆盖侧边控件、内屏双栏、Sheet、折叠避让和多任务。
 
@@ -20,6 +22,10 @@
 - 错误示例：常见但不适合可折叠设备的实现；
 - 推荐示例：使用系统容器、尺寸等级和安全区；
 - 验证清单：在不同尺寸、方向和姿态下检查什么。
+
+## 示例策略
+
+这个项目使用 iPhone Duo Design Guide 本身作为示例内容。阅读器的导航、章节布局、工具栏和状态管理，都应该遵循正在讲解的设计原则。这样学习者看到的不只是一个抽象 Demo，而是一份正在实践这些原则的真实指南 App。
 
 ## 官方资料
 
