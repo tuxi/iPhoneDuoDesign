@@ -98,7 +98,16 @@ let lessonGroups: [LessonGroup] = [
                 status: .later,
                 principle: "优先使用系统导航容器和 toolbar，让系统负责侧边布局、分组和 overflow。",
                 experiment: "逐渐增加 toolbar actions，观察空间不足时系统如何处理溢出。"
-            )
+            ),
+            Lesson(
+                id: "split-view-multitasking",
+                title: "Split View & Multitasking",
+                subtitle: "适应并排运行与变化的空间",
+                systemImage: "rectangle.split.2x1",
+                status: .later,
+                principle: "系统负责并排放置 App；App 应根据实际可用空间调整布局，并保持当前状态。",
+                experiment: "在 iPhone Duo 的系统 Split View 中分别测试 App 位于左侧和右侧，观察布局、控件和交互状态。"
+            ),
         ]
     ),
     LessonGroup(

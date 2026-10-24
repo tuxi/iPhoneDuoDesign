@@ -24,7 +24,10 @@ struct LessonDemoView: View {
         case "inner-display":
             InnerDisplayDemo()
         case "sheets-and-pip":
-            SheetDemoView()
+            VStack(spacing: 16) {
+                SheetDemoView()
+                PiPDemoView()
+            }
         case "fold-avoidance":
             if #available(iOS 27.1, *) {
                 FoldAvoidanceDemoView()
@@ -32,6 +35,8 @@ struct LessonDemoView: View {
                 Text("Fold Avoidance 需要 iOS 27.1 或更高版本。")
                     .foregroundStyle(.secondary)
             }
+        case "split-view-multitasking":
+            SplitViewDemoView()
         default:
             Text("这个案例的可运行实验还在准备中。")
                 .foregroundStyle(.secondary)

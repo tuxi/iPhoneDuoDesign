@@ -60,6 +60,16 @@ extension Lesson {
                     "信息密集型 App 可以考虑把 Tab Bar 展示为 Sidebar。"
                 ]
             )
+        case "split-view-multitasking":
+            GuideEntry(
+                summary: "Split View 是系统级多任务布局。App 不需要自己创建分屏，而要能适应系统分配的窗口空间。",
+                points: [
+                    "根据容器空间调整布局，不要假设 App 始终占满整个显示屏。",
+                    "使用 size class、容器尺寸和安全区理解当前可用空间。",
+                    "空间变化时，尽量保留用户输入和交互状态。",
+                    "在 App 位于 Split View 左侧和右侧时都检查控件位置。"
+                ]
+            )
         default:
             GuideEntry(
                 summary: "继续使用系统组件和自适应容器，让 App 在不同尺寸和姿态下保持一致。",
