@@ -25,6 +25,8 @@ struct LessonDetailView: View {
                 DemoPlaceholder(title: "设计原则", text: lesson.principle)
                 DemoPlaceholder(title: "动手实验", text: lesson.experiment)
 
+                LessonDemoView(lessonID: lesson.id)
+
                 VStack(alignment: .leading, spacing: 8) {
                     Text("学习状态")
                         .font(.headline)
