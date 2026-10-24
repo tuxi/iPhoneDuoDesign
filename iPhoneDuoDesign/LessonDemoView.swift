@@ -23,6 +23,15 @@ struct LessonDemoView: View {
             VerticalControlsDemo()
         case "inner-display":
             InnerDisplayDemo()
+        case "sheets-and-pip":
+            SheetDemoView()
+        case "fold-avoidance":
+            if #available(iOS 27.1, *) {
+                FoldAvoidanceDemoView()
+            } else {
+                Text("Fold Avoidance 需要 iOS 27.1 或更高版本。")
+                    .foregroundStyle(.secondary)
+            }
         default:
             Text("这个案例的可运行实验还在准备中。")
                 .foregroundStyle(.secondary)
