@@ -7,7 +7,8 @@
 1. [项目结构与学习方法](lessons/00-project-structure.md)
 2. [Resizability：让布局自由缩放](lessons/01-resizability.md)
 3. [Safe Area：让内容避开系统区域](lessons/02-safe-area.md)
-4. 阅读根目录的[中文设计指南](../iPhone-Duo-设计指南.md)或[英文设计指南](../README.md)
+4. [Single Experience：保持状态连续](lessons/03-single-experience.md)
+5. 阅读根目录的[中文设计指南](../iPhone-Duo-设计指南.md)或[英文设计指南](../README.md)
 
 后续案例会覆盖侧边控件、内屏双栏、Sheet、折叠避让和多任务。
 

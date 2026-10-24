@@ -20,4 +20,4 @@
 
 ## 当前阶段
 
-第一阶段先建立学习目录和文档索引。接下来从 `Resizability` 和 `Safe Area` 开始，把指南中的 P0 原则逐步变成可运行实验。
+第一阶段先建立学习目录和文档索引。现在已经加入 `Resizability`、`Safe Area` 和 `Single Experience` 三个可运行实验，后续继续把指南中的 P0 原则逐步变成可验证的案例。

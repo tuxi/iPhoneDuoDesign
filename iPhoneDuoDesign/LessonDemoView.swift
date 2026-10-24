@@ -17,6 +17,8 @@ struct LessonDemoView: View {
             ResizabilityDemo()
         case "safe-area":
             SafeAreaDemo()
+        case "single-experience":
+            SingleExperienceDemo()
         default:
             Text("这个案例的可运行实验还在准备中。")
                 .foregroundStyle(.secondary)
@@ -166,7 +168,7 @@ private struct SafeAreaActionBar: View {
     }
 }
 
-private struct DemoSectionHeader: View {
+struct DemoSectionHeader: View {
     let title: String
     let subtitle: String
 
