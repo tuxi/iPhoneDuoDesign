@@ -27,6 +27,17 @@ struct LessonDetailView: View {
                         description: Text("Toolbar Overflow 从 iOS 27.1 开始提供。")
                     )
                 }
+            } else if lesson.id == "occlusion-region" {
+                if #available(iOS 27.1, *) {
+                    OcclusionRegionDemoView()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                } else {
+                    ContentUnavailableView(
+                        "需要 iOS 27.1",
+                        systemImage: "camera",
+                        description: Text("Occlusion Region 从 iOS 27.1 开始提供。")
+                    )
+                }
             } else {
                 standardContent
             }

@@ -11,9 +11,10 @@
 5. [Vertical Controls：让系统管理控件](lessons/04-vertical-controls.md)
 6. [Inner Display：使用双栏展示指南](lessons/05-inner-display.md)
 7. [Toolbar Overflow & Compression：让系统收起次要操作](lessons/06-toolbar-overflow.md)
-8. 阅读根目录的[中文设计指南](../iPhone-Duo-设计指南.md)或[英文设计指南](../README.md)
+8. [Occlusion Region：让重要内容避开摄像头遮挡](lessons/07-occlusion-region.md)
+9. 阅读根目录的[中文设计指南](../iPhone-Duo-设计指南.md)或[英文设计指南](../README.md)
 
-后续案例会覆盖 Sheet、折叠避让、多任务和 ArrangementView。
+课程会继续按 P0 → P1 → P2 的顺序补充。
 
 ## 文档与代码的关系
 

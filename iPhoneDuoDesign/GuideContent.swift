@@ -99,6 +99,16 @@ extension Lesson {
                     "打开新窗口前检查 supportsMultipleWindows。"
                 ]
             )
+        case "occlusion-region":
+            GuideEntry(
+                summary: "Occlusion 区域会覆盖部分内容，例如正在使用的内屏摄像头区域。",
+                points: [
+                    "用 reservedRegions(kind: .occlusion) 查询遮挡区域。",
+                    "使用 includeInactive 同时观察未激活区域，提前了解它的位置。",
+                    "region.frame 位于当前 GeometryProxy 的坐标空间。",
+                    "只移动需要避开遮挡的重要内容，避免整个界面不必要地跳动。"
+                ]
+            )
         default:
             GuideEntry(
                 summary: "继续使用系统组件和自适应容器，让 App 在不同尺寸和姿态下保持一致。",

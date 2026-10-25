@@ -159,6 +159,15 @@ let lessonGroups: [LessonGroup] = [
                 principle: "每个 Scene 都是同一 App 的一个独立界面实例，状态应按窗口管理。",
                 experiment: "在内屏打开多个学习便签，比较各自的编辑状态；切到外屏再观察新建窗口能力。"
             ),
+            Lesson(
+                id: "occlusion-region",
+                title: "Occlusion Region",
+                subtitle: "让重要内容避开摄像头遮挡",
+                systemImage: "camera",
+                status: .later,
+                principle: "Occlusion 区域表示硬件等内容会遮挡的范围；重要内容应避开它。",
+                experiment: "观察内屏摄像头区域激活前后的 frame 和状态，并比较 includeInactive 的作用。"
+            ),
         ]
     )
 ]
