@@ -8,6 +8,7 @@
 import SwiftUI
 
 enum AppWindowID {
+    static let main = "main"
     static let lessonNote = "lesson-note"
 }
 
@@ -21,7 +22,7 @@ struct MultiSceneDemoView: View {
         VStack(alignment: .leading, spacing: 16) {
             DemoSectionHeader(
                 title: "多窗口与 Scene",
-                subtitle: "每个 WindowGroup 实例都是同一 App 的一个独立窗口。"
+                subtitle: "每个 Scene 都是同一 App 的一个独立窗口实例。"
             )
             
             Button {
@@ -71,6 +72,18 @@ struct LessonNoteWindowView: View {
                         .frame(minHeight: 140)
                 }
                 
+                Section("窗口") {
+                    Button {
+                        openWindow(id: AppWindowID.main)
+                    } label: {
+                        Label("打开主窗口", systemImage: "rectangle.on.rectangle")
+                    }
+
+                    Text("关闭主窗口后，便签窗口不会自动关闭；再次启动会恢复便签。用本节的按钮重新打开主窗口。")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+
                 Section("继续试验") {
                     Button {
                         openWindow(id: AppWindowID.lessonNote)

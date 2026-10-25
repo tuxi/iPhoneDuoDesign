@@ -91,11 +91,12 @@ extension Lesson {
             )
         case "multiple-scenes":
             GuideEntry(
-                summary: "WindowGroup 描述可创建的一类窗口，Scene 是它的一次具体实例。",
+                summary: "WindowGroup 声明可重复创建的窗口，Window 声明单实例窗口；Scene 是它们的一次具体实例。",
                 points: [
-                    "用 WindowGroup 声明可重复创建的窗口内容。",
-                    "用唯一 ID 和 openWindow 请求打开指定窗口组。",
-                    "每个窗口实例拥有独立的局部状态。",
+                    "WindowGroup 适合便签这类可多开的窗口；Window 适合唯一的主界面。",
+                    "每个 Scene 独立存活；关闭一个不会自动关闭其他 Scene。",
+                    "系统会恢复最后一个存活的 Scene，不会自动重建已经关闭的主窗口。",
+                    "用 openWindow(id:) 显式请求重新打开指定窗口。",
                     "打开新窗口前检查 supportsMultipleWindows。"
                 ]
             )

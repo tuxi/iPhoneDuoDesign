@@ -156,8 +156,8 @@ let lessonGroups: [LessonGroup] = [
                 subtitle: "让同一个 App 打开多个窗口",
                 systemImage: "macwindow.on.rectangle",
                 status: .later,
-                principle: "每个 Scene 都是同一 App 的一个独立界面实例，状态应按窗口管理。",
-                experiment: "在内屏打开多个学习便签，比较各自的编辑状态；切到外屏再观察新建窗口能力。"
+                principle: "WindowGroup 声明可重复创建的窗口，Window 声明单实例窗口；每个 Scene 独立存活，关闭后不会自动重建。",
+                experiment: "打开多个便签，关闭主窗口，再从便签里重新打开主窗口；比较各窗口的独立状态。"
             ),
             Lesson(
                 id: "occlusion-region",

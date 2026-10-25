@@ -10,10 +10,10 @@ import SwiftUI
 @main
 struct iPhoneDuoDesignApp: App {
     var body: some Scene {
-        WindowGroup {
+        WindowGroup(id: AppWindowID.main) {
             ContentView()
         }
-        
+
         WindowGroup(id: AppWindowID.lessonNote) {
             LessonNoteWindowView()
         }
