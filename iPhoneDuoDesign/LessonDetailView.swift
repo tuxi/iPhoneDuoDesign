@@ -16,6 +16,17 @@ struct LessonDetailView: View {
             if lesson.id == "adaptive-arrangements" {
                 ArrangementDemoView()
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
+            } else if lesson.id == "toolbar-overflow" {
+                if #available(iOS 27.1, *) {
+                    ToolbarOverflowDemo()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                } else {
+                    ContentUnavailableView(
+                        "需要 iOS 27.1",
+                        systemImage: "ellipsis.circle",
+                        description: Text("Toolbar Overflow 从 iOS 27.1 开始提供。")
+                    )
+                }
             } else {
                 standardContent
             }

@@ -10,9 +10,10 @@
 4. [Single Experience：保持状态连续](lessons/03-single-experience.md)
 5. [Vertical Controls：让系统管理控件](lessons/04-vertical-controls.md)
 6. [Inner Display：使用双栏展示指南](lessons/05-inner-display.md)
-7. 阅读根目录的[中文设计指南](../iPhone-Duo-设计指南.md)或[英文设计指南](../README.md)
+7. [Toolbar Overflow & Compression：让系统收起次要操作](lessons/06-toolbar-overflow.md)
+8. 阅读根目录的[中文设计指南](../iPhone-Duo-设计指南.md)或[英文设计指南](../README.md)
 
-后续案例会覆盖侧边控件、内屏双栏、Sheet、折叠避让和多任务。
+后续案例会覆盖 Sheet、折叠避让、多任务和 ArrangementView。
 
 ## 文档与代码的关系
 

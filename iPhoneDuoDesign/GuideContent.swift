@@ -79,6 +79,16 @@ extension Lesson {
                     "不要把 ArrangementView 放进 ScrollView，也不要把导航容器塞进 ArrangementView。"
                 ]
             )
+        case "toolbar-overflow":
+            GuideEntry(
+                summary: "Toolbar 溢出由系统管理：为操作声明优先级，让系统决定谁留下、谁进入 overflow 菜单。",
+                points: [
+                    "用 ToolbarItemGroup 分组，系统先决定整组去留，再比较单项优先级。",
+                    "用 visibilityPriority 标记高频操作；不要手动隐藏按钮或另建溢出菜单。",
+                    "过宽控件用 axisBehavior(.horizontalOnly) 留在横向 bar，不强行放进纵向栏。",
+                    "toolbarVerticalCompressionBehavior 决定空间不足时优先保留工具栏还是标签栏；它仅在根级标签栏与工具栏竞争时可见。"
+                ]
+            )
         default:
             GuideEntry(
                 summary: "继续使用系统组件和自适应容器，让 App 在不同尺寸和姿态下保持一致。",

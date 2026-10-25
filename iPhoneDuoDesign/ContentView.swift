@@ -8,10 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+
     @State private var selectedLesson: Lesson?
 
     var body: some View {
+        TabView {
+            Tab("指南", systemImage: "book.pages") {
+                guideNavigation
+            }
+
+            Tab("压缩实验", systemImage: "arrow.up.and.down.text.horizontal") {
+                ToolbarCompressionTab()
+            }
+        }
+    }
+
+    private var guideNavigation: some View {
         NavigationSplitView {
             List(lessonGroups) { group in
                 Section(group.title) {
@@ -34,6 +46,26 @@ struct ContentView: View {
             }
         }
         .navigationSplitViewStyle(.balanced)
+    }
+
+    private struct ToolbarCompressionTab: View {
+        var body: some View {
+            NavigationStack {
+                Group {
+                    if #available(iOS 27.1, *) {
+                        ToolbarCompressionDemo()
+                    } else {
+                        ContentUnavailableView(
+                            "需要 iOS 27.1",
+                            systemImage: "arrow.up.and.down.text.horizontal",
+                            description: Text("Toolbar 压缩实验需要 iOS 27.1 或更高版本。")
+                        )
+                    }
+                }
+                .navigationTitle("Bar 压缩")
+                .navigationBarTitleDisplayMode(.inline)
+            }
+        }
     }
 }
 

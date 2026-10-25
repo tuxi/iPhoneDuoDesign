@@ -100,6 +100,15 @@ let lessonGroups: [LessonGroup] = [
                 experiment: "逐渐增加 toolbar actions，观察空间不足时系统如何处理溢出。"
             ),
             Lesson(
+                id: "toolbar-overflow",
+                title: "Toolbar Overflow",
+                subtitle: "让系统收起次要操作",
+                systemImage: "ellipsis.circle",
+                status: .next,
+                principle: "纵向栏空间不足时，系统按可见性优先级把次要操作收进 overflow；不要手动隐藏或删除按钮。",
+                experiment: "在外屏和内屏横屏下观察 visibilityPriority 如何改变 overflow 顺序。"
+            ),
+            Lesson(
                 id: "split-view-multitasking",
                 title: "Split View & Multitasking",
                 subtitle: "适应并排运行与变化的空间",
