@@ -131,7 +131,16 @@ let lessonGroups: [LessonGroup] = [
                 status: .later,
                 principle: "Sheet 和画中画会改变可用空间，界面需要在变化过程中保持可用。",
                 experiment: "检查 Sheet、Split View 和 PiP 下的内容缩放与控件位置。"
-            )
+            ),
+            Lesson(
+                id: "adaptive-arrangements",
+                title: "Adaptive Arrangements",
+                subtitle: "让系统编排关联内容",
+                systemImage: "rectangle.2.swap",
+                status: .later,
+                principle: "当两个视图存在主次或关联关系时，使用 ArrangementView 让系统根据空间和折叠状态安排它们。",
+                experiment: "观察主视图与次视图在不同尺寸、方向和折叠状态下如何重新排布。"
+            ),
         ]
     )
 ]

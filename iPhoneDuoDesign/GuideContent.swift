@@ -70,6 +70,15 @@ extension Lesson {
                     "在 App 位于 Split View 左侧和右侧时都检查控件位置。"
                 ]
             )
+        case "adaptive-arrangements":
+            GuideEntry(
+                summary: "ArrangementView 是导航容器和内容容器之间的布局层，负责根据环境编排两个相关视图。",
+                points: [
+                    "主视图展示核心内容，次视图展示与它相关的内容。",
+                    "split arrangement 适合两个视图都需要同时可见的主次关系。",
+                    "不要把 ArrangementView 放进 ScrollView，也不要把导航容器塞进 ArrangementView。"
+                ]
+            )
         default:
             GuideEntry(
                 summary: "继续使用系统组件和自适应容器，让 App 在不同尺寸和姿态下保持一致。",

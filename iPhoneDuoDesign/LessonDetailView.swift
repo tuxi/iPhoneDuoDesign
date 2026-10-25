@@ -12,6 +12,19 @@ struct LessonDetailView: View {
     let lesson: Lesson
     
     var body: some View {
+        Group {
+            if lesson.id == "adaptive-arrangements" {
+                ArrangementDemoView()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            } else {
+                standardContent
+            }
+        }
+        .navigationTitle(lesson.title)
+        .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    private var standardContent: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 24) {
                 Label(lesson.title, systemImage: lesson.systemImage)
@@ -33,13 +46,11 @@ struct LessonDetailView: View {
                         .font(.headline)
                     Label(lesson.status.rawValue, systemImage: "checkmark.circle")
                         .foregroundStyle(.secondary)
-                }   
+                }
             }
             .frame(maxWidth: 760, alignment: .leading)
             .padding(24)
         }
-        .navigationTitle(lesson.title)
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
