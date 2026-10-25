@@ -150,6 +150,15 @@ let lessonGroups: [LessonGroup] = [
                 principle: "当两个视图存在主次或关联关系时，使用 ArrangementView 让系统根据空间和折叠状态安排它们。",
                 experiment: "观察主视图与次视图在不同尺寸、方向和折叠状态下如何重新排布。"
             ),
+            Lesson(
+                id: "multiple-scenes",
+                title: "Multiple Scenes",
+                subtitle: "让同一个 App 打开多个窗口",
+                systemImage: "macwindow.on.rectangle",
+                status: .later,
+                principle: "每个 Scene 都是同一 App 的一个独立界面实例，状态应按窗口管理。",
+                experiment: "在内屏打开多个学习便签，比较各自的编辑状态；切到外屏再观察新建窗口能力。"
+            ),
         ]
     )
 ]

@@ -37,6 +37,8 @@ struct LessonDemoView: View {
             }
         case "split-view-multitasking":
             SplitViewDemoView()
+        case "multiple-scenes":
+            MultiSceneDemoView()
         default:
             Text("这个案例的可运行实验还在准备中。")
                 .foregroundStyle(.secondary)

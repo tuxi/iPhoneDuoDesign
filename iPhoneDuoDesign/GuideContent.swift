@@ -89,6 +89,16 @@ extension Lesson {
                     "toolbarVerticalCompressionBehavior 决定空间不足时优先保留工具栏还是标签栏；它仅在根级标签栏与工具栏竞争时可见。"
                 ]
             )
+        case "multiple-scenes":
+            GuideEntry(
+                summary: "WindowGroup 描述可创建的一类窗口，Scene 是它的一次具体实例。",
+                points: [
+                    "用 WindowGroup 声明可重复创建的窗口内容。",
+                    "用唯一 ID 和 openWindow 请求打开指定窗口组。",
+                    "每个窗口实例拥有独立的局部状态。",
+                    "打开新窗口前检查 supportsMultipleWindows。"
+                ]
+            )
         default:
             GuideEntry(
                 summary: "继续使用系统组件和自适应容器，让 App 在不同尺寸和姿态下保持一致。",

@@ -13,5 +13,9 @@ struct iPhoneDuoDesignApp: App {
         WindowGroup {
             ContentView()
         }
+        
+        WindowGroup(id: AppWindowID.lessonNote) {
+            LessonNoteWindowView()
+        }
     }
 }
