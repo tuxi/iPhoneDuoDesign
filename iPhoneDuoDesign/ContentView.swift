@@ -20,6 +20,10 @@ struct ContentView: View {
             Tab("压缩实验", systemImage: "arrow.up.and.down.text.horizontal") {
                 ToolbarCompressionTab()
             }
+
+            Tab("剪辑器", systemImage: "film") {
+                VideoEditorTab()
+            }
         }
     }
 
@@ -63,6 +67,26 @@ struct ContentView: View {
                     }
                 }
                 .navigationTitle("Bar 压缩")
+                .navigationBarTitleDisplayMode(.inline)
+            }
+        }
+    }
+
+    private struct VideoEditorTab: View {
+        var body: some View {
+            NavigationStack {
+                Group {
+                    if #available(iOS 27.1, *) {
+                        VideoEditorDemoView()
+                    } else {
+                        ContentUnavailableView(
+                            "需要 iOS 27.1",
+                            systemImage: "film",
+                            description: Text("剪辑器实验需要 iOS 27.1 或更高版本。")
+                        )
+                    }
+                }
+                .navigationTitle("剪辑器")
                 .navigationBarTitleDisplayMode(.inline)
             }
         }
