@@ -12,7 +12,7 @@
 6. [Inner Display：使用双栏展示指南](lessons/05-inner-display.md)
 7. [Toolbar Overflow & Compression：让系统收起次要操作](lessons/06-toolbar-overflow.md)
 8. [Occlusion Region：让重要内容避开摄像头遮挡](lessons/07-occlusion-region.md)
-9. 阅读根目录的[中文设计指南](../iPhone-Duo-设计指南.md)或[英文设计指南](../README.md)
+9. 阅读根目录的[中文设计指南](../iPhone-Duo-设计指南.md)或[英文设计指南](../README.en.md)
 
 课程会继续按 P0 → P1 → P2 的顺序补充。
 

@@ -1,5 +1,7 @@
 # iPhone Duo 设计指南（中文）
 
+> English version: [README.en.md](./README.en.md) · 项目入口: [README.md](./README.md)
+
 > 面向 iOS 开发者与设计师的中文适配指南，内容基于 Apple 官方资料整理：
 >
 > - **Apple HIG《Designing for iPhone Duo》**（**主要参考，内容最完整的官方设计指南**）：<https://developer.apple.com/design/human-interface-guidelines/designing-for-iphone-duo>
